@@ -1,7 +1,0 @@
-Metadata-Version: 2.4
-Name: pcb-forge
-Version: 1.0.0
-Summary: A CLI tool to generate high-fidelity PCB renders from KiCad SVGs.
-Author-email: prtmxio <dhimanpritam1579@gmail.com>
-Requires-Python: >=3.8
-Requires-Dist: lxml

@@ -1,18 +1,27 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=45", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "pcb-forge"
 version = "1.0.0"
-authors = [
-  { name="prtmxio", email="dhimanpritam1579@gmail.com" },
-]
-description = "A CLI tool to generate high-fidelity PCB renders from KiCad SVGs."
+description = "PCB Renderer with Component Placement"
+readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
-    "lxml", # This lists your library requirement
+    "lxml>=4.6.0"
+]
+authors = [
+    {name = "prtmxio", email = "pdhiman7777@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
 ]
 
 [project.scripts]
-forge = "forge.main:main" # This creates the 'forge' command
+forge = "forge.main:main"
