@@ -41,6 +41,23 @@ forge -f ./gerbers -c ./components --config-only
 - Python 3.8+
 - lxml library (installed automatically)
 
+## Important Notes
+
+**PCB Setup Requirements:**
+When exporting your position file, ensure that:
+- Grid origin is positioned at the bottom-left corner of the PCB's bounding rectangle
+- Drill holes reference the same bottom-left origin point
+
+This coordinate system alignment is critical for accurate component placement in the rendered output.
+
+**Component Customization:**
+After running the tool, a `component_config.json` file will be generated in your Gerber folder. You can edit this file to fine-tune:
+- Component rotation angles
+- Scaling factors for individual components
+- SVG file mappings for specific components
+
+The tool automatically attempts to match components to SVGs, but manual adjustments may be needed for optimal visual results.
+
 ## Input Files
 
 The tool expects:
